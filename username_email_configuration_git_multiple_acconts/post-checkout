@@ -9,10 +9,19 @@ shopt -s nocasematch
 # values in the services array should have a corresponding section in
 # .gitconfig where the 'name' and 'email' for that service are specified
 remote_url="$( git config --get --local remote.origin.url )"
+
+
+# ADD THE URLS that you may need to configure in your system 
+# ######################################################
+# ######################################################
 services=(
     'github.com'
     'gitlab.com'
+    'work.github.com'
+    'work.gitlab.com'    
 )
+# ######################################################
+# ######################################################
 
 set_local_user_config() {
     local service="${1}"
